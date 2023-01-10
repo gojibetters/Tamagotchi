@@ -1,0 +1,27 @@
+input {
+  width: 35.4375rem;
+  height: 3.4375rem;
+
+  border: 2px solid var(--black-color);
+  border-radius: 1.875rem;
+
+  margin-top: 1rem;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: var(--gray-color);
+
+  padding-inline-start: 1.5625rem;
+}
+
+::placeholder {
+  color: var(--gray-color);
+  opacity: 1;
+}
+
+input[type='text']:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.7px black;
+}

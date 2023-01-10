@@ -1,0 +1,94 @@
+.container {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.span {
+  width: 53.125rem;
+  height: 23.875rem;
+
+  background-color: var(--smoth-green-color);
+  border-radius: 1.875rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  display: flex;
+  float: right;
+  margin-top: 1.3125rem;
+  margin-right: 1.9375rem;
+
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.125rem;
+}
+
+.messageUp,
+.messageDown {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+
+  color: var(--gray-color);
+}
+
+.messageUp {
+  margin-top: 5rem;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.buttonReset,
+.buttonCancel {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 9.375rem;
+  height: 3.125rem;
+
+  padding: 1rem;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  border-radius: 1.875rem;
+
+  cursor: pointer;
+}
+
+.buttonReset {
+  background-color: var(--white-color);
+  border: 2px solid var(--black-color);
+  color: var(--black-color);
+}
+
+.buttonCancel {
+  background-color: var(--black-color);
+  border: none;
+  color: var(--white-color);
+
+  margin-left: 1.5rem;
+}

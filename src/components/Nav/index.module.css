@@ -1,0 +1,81 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-inline: 6.25rem;
+
+  height: 7.5rem;
+}
+
+.logo {
+  margin-right: 37.5rem;
+}
+
+.newAnimal,
+.reset {
+  width: 11.25rem;
+  height: 3.4375rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  border-radius: 1.875rem;
+
+  float: right;
+
+  cursor: pointer;
+}
+
+.newAnimal:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.newAnimal:active {
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.newAnimal {
+  background-color: var(--gray-color);
+  border: none;
+  color: var(--white-color);
+
+  margin-right: 1.875rem;
+}
+
+.reset:hover {
+  color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.reset:active {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.reset {
+  background-color: var(--white-color);
+  border: 2px solid var(--gray-color);
+  color: var(--gray-color);
+}
+
+@media (max-width: 1840px) {
+  .logo {
+    margin-right: 33rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .logo {
+    margin-right: 12rem;
+    width: 550px;
+  }
+}

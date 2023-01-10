@@ -1,0 +1,115 @@
+main {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerImg {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 2.125rem;
+  height: 2.125rem;
+
+  cursor: pointer;
+}
+
+.info,
+.tamagotchiImg {
+  display: flex;
+}
+
+.titleAction,
+.titleExercise {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+
+  margin-bottom: 2.5rem;
+}
+
+.titleExercise {
+  margin-top: 3.4375rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.buttonEat,
+.buttonSleep,
+.buttonRun,
+.buttonJump {
+  width: 16.875rem;
+  height: 6.5625rem;
+
+  margin-inline-start: 1.25rem;
+
+  background-color: var(--gray-color);
+  border: none;
+  color: var(--white-color);
+  border-radius: 1.875rem;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  cursor: pointer;
+}
+
+.buttonEat:hover,
+.buttonSleep:hover,
+.buttonRun:hover,
+.buttonJump:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 1840px) {
+}
+
+@media (max-width: 1400px) {
+  .tamagotchiImg {
+    width: 400px;
+  }
+  .titleExercise {
+    margin-top: 2rem;
+  }
+  .buttonEat,
+  .buttonSleep,
+  .buttonRun,
+  .buttonJump {
+    width: 14rem;
+    height: 5.5rem;
+  }
+  .titleAction,
+  .titleExercise {
+    margin-bottom: 1rem;
+  }
+}
